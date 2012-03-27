@@ -20,7 +20,7 @@ To do this you must create a constant that contains your Sinatra code and put it
 Vegas = Sinatra.new do
   set :sessions, true
 
-  get '/'
+  get '/' do
     'Vegas, Baby!'
   end
 end
