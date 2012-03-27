@@ -14,10 +14,10 @@ gem "adhearsion-sinatra"
 
 2. Create your Sinatra application
 
-To do this you must create a class that inherits from Sinatra::Base and put it in your `lib/` directory within your Adhearsion application.  For example, if you want to create an application called 'Vegas' you would create the file `lib/vegas.rb` and populate it with:
+To do this you must create a constant that contains your Sinatra code and put it in your `lib/` directory within your Adhearsion application.  For example, if you want to create an application called 'Vegas' you would create the file `lib/vegas.rb` and populate it with:
 
 ```ruby
-class Vegas < Sinatra::Base
+Vegas = Sinatra.new do
   set :sessions, true
 
   get '/'
