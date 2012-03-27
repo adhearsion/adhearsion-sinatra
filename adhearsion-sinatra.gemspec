@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_runtime_dependency %q<adhearsion>, [">= 2.0.0.rc3"]
+  s.add_runtime_dependency %q<sinatra>
   s.add_runtime_dependency %q<activesupport>, [">= 3.0.10"]
 
   s.add_development_dependency %q<bundler>, ["~> 1.0.0"]
